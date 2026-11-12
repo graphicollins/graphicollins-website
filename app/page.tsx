@@ -64,9 +64,12 @@ const services = [
   return (
     <main className="min-h-screen bg-[#F5F1E9] text-[#171717]">
 
+
       {/* NAVIGATION */}
-      <nav className="flex items-center justify-between px-6 md:px-16 py-6 border-b border-[#DED8CE]">
-        <a href="#home">
+      <nav className="flex flex-col md:flex-row items-center justify-between gap-6 px-6 md:px-16 py-6 border-b border-[#DED8CE]">
+
+        {/* LOGO */}
+        <a href="#home" className="shrink-0">
           <img
             src="/graphicollins-logo.png"
             alt="Graphicollins"
@@ -74,19 +77,39 @@ const services = [
           />
         </a>
 
-       <a href="#home" className="hover:text-[#C58A45]">Home</a>
-<a href="#about" className="hover:text-[#C58A45]">About</a>
-<a href="#portfolio" className="hover:text-[#C58A45]">Portfolio</a>
-<a href="#services" className="hover:text-[#C58A45]">Services</a>
-<a href="#pricing" className="hover:text-[#C58A45]">Pricing</a>
+        {/* NAVIGATION LINKS */}
+        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm font-medium">
+          <a href="#home" className="hover:text-[#C58A45] transition-colors">
+            Home
+          </a>
 
+          <a href="#about" className="hover:text-[#C58A45] transition-colors">
+            About
+          </a>
+
+          <a href="#portfolio" className="hover:text-[#C58A45] transition-colors">
+            Portfolio
+          </a>
+
+          <a href="#services" className="hover:text-[#C58A45] transition-colors">
+            Services
+          </a>
+
+          <a href="#pricing" className="hover:text-[#C58A45] transition-colors">
+            Pricing
+          </a>
+        </div>
+
+        {/* CONTACT BUTTON */}
         <a
           href="/project-inquiry"
-          className="bg-[#171717] text-white px-6 py-3 rounded-full text-sm hover:bg-[#C58A45] transition"
+          className="bg-[#171717] text-white px-6 py-3 rounded-full text-sm hover:bg-[#C58A45] transition shrink-0"
         >
           Let's Talk ↗
         </a>
+
       </nav>
+
 
       {/* HERO SECTION */}
       <section
